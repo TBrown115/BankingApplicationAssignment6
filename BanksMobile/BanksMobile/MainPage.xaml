@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanksMobile.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="SpringGreen" Padding="24" Opacity="1.3"  CornerRadius="0">
+            <Label Text="BankingMobile" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="Deposits" Keyboard="Numeric" Placeholder="Enter Deposit Amount"/>
+        <Entry x:Name="ReasonsForDeposit" Placeholder="Provide Reason" Margin="0,24,0,0"/>
+        <Button Text="Deposit" Clicked="DepositButton"/>
+
+        <Entry x:Name="Withdraws" Keyboard="Numeric" Placeholder="Enter Withdraw Amount"/>
+        <Entry x:Name="ReasonsForWithdraw" Keyboard="Numeric" Placeholder="Provide Reason" Margin="0,24,0,0"/>
+        <Button Text="Withdraw" Clicked="WithdrawButton"/>
+
+        <Button Text="Transaction History" Clicked="HistoryButton"/>
+        <Label x:Name="TransactionHistory" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
